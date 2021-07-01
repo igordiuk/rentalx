@@ -5,6 +5,8 @@ WORKDIR /usr/app
 
 COPY package.json ./
 
+RUN npm install -g npm@7.18.1
+
 RUN npm install
 
 COPY . .
